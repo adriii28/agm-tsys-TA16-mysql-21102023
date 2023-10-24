@@ -3,8 +3,8 @@
 -- Ej 2.1 
 SELECT apellidos as Apellidos FROM empleados;
 
--- Ej 2.2 -----------------------------------
-SELECT apellidos FROM empleados; 
+-- Ej 2.2 
+SELECT DISTINCT apellidos FROM empleados; 
 
 -- Ej 2.3
 SELECT * FROM empleados
@@ -81,7 +81,6 @@ DELETE FROM empleados
 WHERE departamento = 
 (SELECT codigo FROM departamentos 
 WHERE presupuesto > 60000);
-
 
 -- Ej 2.20
 DELETE FROM empleados;

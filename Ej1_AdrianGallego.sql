@@ -7,10 +7,13 @@ SELECT nombre FROM articulos;
 SELECT nombre, precio FROM articulos;
 
 -- Ej 1.3
-SELECT nombre, precio FROM articulos WHERE precio<=200;
+SELECT nombre, precio 
+FROM articulos 
+WHERE precio<=200;
 
 -- Ej 1.4
-SELECT nombre, precio FROM articulos 
+SELECT nombre, precio 
+FROM articulos 
 WHERE precio BETWEEN 60 AND 121;
 
 -- Ej 1.5
@@ -20,18 +23,22 @@ SELECT nombre as Nombre, precio * 166.386  as Pesetas FROM articulos;
 SELECT avg(precio) as PrecioMedio FROM articulos;
 
 -- Ej 1.7
-SELECT avg(precio) as PrecioMedio FROM articulos 
+SELECT avg(precio) as PrecioMedio 
+FROM articulos 
 WHERE fabricante = 2;
 
 -- Ej 1.8
-SELECT count(codigo) FROM articulos 
+SELECT count(codigo) 
+FROM articulos 
 WHERE precio>=180 ;
 
 -- Ej 1.9
-SELECT nombre, precio FROM articulos 
+SELECT nombre, precio 
+FROM articulos 
 WHERE precio>=180 ORDER BY precio desc;
 
-SELECT nombre, precio FROM articulos 
+SELECT nombre, precio 
+FROM articulos 
 WHERE precio>=180 ORDER BY nombre asc;
 
 -- Ej 1.10

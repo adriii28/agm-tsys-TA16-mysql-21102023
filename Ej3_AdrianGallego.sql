@@ -57,7 +57,7 @@ INSERT INTO cajas (numreferencia, contenido, valor, almacen) VALUES('H5RT', 'Pap
 -- Ej 3.13
 UPDATE cajas SET valor = valor * 0.85;
 
--- Ej 3.14 ------------------- REVISAR -----------------------
+-- Ej 3.14
 UPDATE cajas SET valor = valor * 0.8
 WHERE valor > (SELECT avg(valor));
 
@@ -65,9 +65,7 @@ WHERE valor > (SELECT avg(valor));
 DELETE FROM cajas
  WHERE valor < 100;
 
--- Ej 3.16 ------------------ HACER -----------------
-
-
+-- Ej 3.16 
 
 
 
